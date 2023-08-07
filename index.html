@@ -14,16 +14,25 @@
             href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@400;500&display=swap"
             rel="stylesheet"
         />
+        <script>
+            function enlargePicture() {
+                var image = document.getElementById("placeholder-img");
+                image.style.width = "600px";
+                image.style.height = "500px";
+            }
+        </script>
     </head>
     <body>
         <!-- nav bar starts -->
         <nav
-            class="fixed w-full bg-white drop-shadow-sm hover:drop-shadow-xl delay-150 transition-all duration-500"
+            class="z-50 fixed w-full bg-white drop-shadow-md border-b fancy-border hover:drop-shadow-xl delay-150 transition-all duration-500"
         >
             <div
                 class="flex container mx-auto justify-end flex-row py-1.5 items-center"
             >
-                <div class="flex-1 logo-letter cursor-pointer">A</div>
+                <div class="flex-1 logo-letter">
+                    <span class="cursor-pointer pr-2 select-none">A</span>
+                </div>
                 <div class="px-5 cursor-pointer">Home</div>
                 <div class="px-5 cursor-pointer">Projects</div>
                 <div class="px-5 cursor-pointer">Contact</div>
@@ -40,14 +49,16 @@
                     Hello, I am Arashveer. I am a student and an aspiring
                     software developer.
                 </p>
-                <div class="py-5"></div>
-                <p class="text-gray-400">Interested?</p>
-                <button
-                    class="bg-zinc-900 rounded-md text-white p-2.5 my-2 font hover:bg-zinc-700 focus:ring-2 select-none"
-                >
-                    Contact me
-                </button>
-                <div class="py-5"></div>
+                <div class="py-4"></div>
+                <div class="flex items-center gap-2">
+                    <p class="text-zinc-600">Interested?</p>
+                    <button
+                        class="bg-zinc-900 rounded-md text-white p-2.5 my-2 font hover:bg-zinc-700 focus:ring-2 select-none"
+                    >
+                        Contact me
+                    </button>
+                </div>
+                <div class="py-4"></div>
                 <p class="w-2/3">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Esse assumenda mollitia unde aliquid cumque harum laboriosam
@@ -62,34 +73,86 @@
             <!-- hero section ends -->
 
             <!-- projects section starts -->
-            <p class="text-3xl font-medium px-4 pb-2 z-50 relative">My Projects</p>
+            <p class="text-3xl font-medium px-4 pb-2 z-40 relative">Projects</p>
             <div class="projects">
                 <div>
                     <i></i>
-                    <p>
-                        <div class="flex">
-                            <div>
-                                <span class="project-title pb-4">CODEBITS</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt quo aut odit provident qui eaque, reprehenderit sequi eligendi saepe dolore ea? Officiis rerum dolore itaque minima placeat. Quam, voluptates!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci in laudantium reiciendis architecto iste sequi, commodi alias rerum provident harum nesciunt incidunt veniam porro iure minus temporibus odit quae placeat?</p>
-                            </div>
-                            <div class=" flex-shrink-0 placeholder-img"></div>
+                    <div class="flex gap-2">
+                        <div>
+                            <span class="project-title pb-4">CODEBITS</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Porro sunt quo aut odit
+                                provident qui eaque, reprehenderit sequi
+                                eligendi saepe dolore ea? Officiis rerum dolore
+                                itaque minima placeat. Quam, voluptates!Lorem
+                                ipsum, dolor sit amet consectetur adipisicing
+                                elit. Adipisci in laudantium reiciendis
+                                architecto iste sequi, commodi alias rerum
+                                provident harum nesciunt incidunt veniam porro
+                                iure minus temporibus odit quae placeat?
+                            </p>
                         </div>
-                    </p>
+                        <div
+                            id="placeholder-img"
+                            class="flex-shrink-0 placeholder-img"
+                            onclick="enlargePicture()"
+                        ></div>
+                    </div>
                 </div>
                 <div>
                     <i></i>
-                    <p>
-                        <div class="flex">
-                            <div>
-                                <span class="project-title pb-4">EXPENSE TRACKER</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt quo aut odit provident qui eaque, reprehenderit sequi eligendi saepe dolore ea? Officiis rerum dolore itaque minima placeat. Quam, voluptates!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci in laudantium reiciendis architecto iste sequi, commodi alias rerum provident harum nesciunt incidunt veniam porro iure minus temporibus odit quae placeat?</p>
-                            </div>
-                            <div class=" flex-shrink-0 placeholder-img2"></div>
+                    <div class="flex gap-2">
+                        <div>
+                            <span class="project-title pb-4"
+                                >EXPENSE TRACKER</span
+                            >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Porro sunt quo aut odit
+                                provident qui eaque, reprehenderit sequi
+                                eligendi saepe dolore ea? Officiis rerum dolore
+                                itaque minima placeat. Quam, voluptates!Lorem
+                                ipsum, dolor sit amet consectetur adipisicing
+                                elit. Adipisci in laudantium reiciendis
+                                architecto iste sequi, commodi alias rerum
+                                provident harum nesciunt incidunt veniam porro
+                                iure minus temporibus odit quae placeat?
+                            </p>
                         </div>
-                    </p>
+                        <div class="flex-shrink-0 placeholder-img2"></div>
+                    </div>
                 </div>
             </div>
+            <div class="py-8"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                rem voluptatibus ea maiores at tempore dolorem! Iure, minima!
+                Fugiat mollitia impedit atque magnam at vitae, tempore culpa et
+                assumenda quas Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Odio consequatur quae vitae quasi autem
+                accusantium, suscipit sed, nulla esse aut cum corrupti numquam
+                atque! Animi doloremque harum deleniti ad provident! Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Architecto
+                blanditiis omnis amet assumenda, adipisci deserunt deleniti
+                fugit nihil illo fuga consectetur debitis quisquam similique
+                beatae ipsum ratione molestiae eos aliquam? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Reiciendis rerum
+                voluptatum aut eos accusamus consequuntur, nemo deserunt commodi
+                cumque corporis cum corrupti labore, accusantium eaque qui eius
+                asperiores veritatis a. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Pariatur at aspernatur quam nostrum
+                repudiandae molestiae in magni recusandae repellat nulla magnam,
+                reiciendis natus nam nesciunt vitae possimus totam architecto
+                sapiente?
+            </p>
+            <div class="py-20"></div>
             <!-- projects section ends -->
         </main>
+        <div class="relative">
+            <div class="py-8 end-footer">
+                <p class="text-center">Arashveer Garaya 2023</p>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,3 +1,12 @@
+:root {
+    --rainbow: linear-gradient(to right, #d25778, #ec585c, #e7d155, #56a8c6);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
 ::selection {
     color: #000;
     background: #7ef7e0;
@@ -8,6 +17,11 @@
 .logo-letter {
     font-family: "Pacifico", serif;
     font-size: 44px;
+}
+
+.fancy-border {
+    border-image: var(--rainbow) 1;
+    border-bottom: 3px solid;
 }
 
 .boldname {
@@ -25,8 +39,8 @@
 
 .project-title {
     font-family: "Rubik", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .projects {
@@ -77,6 +91,10 @@
     z-index: 30;
 }
 
+.projects > div > div {
+    z-index: 40;
+}
+
 .placeholder-img {
     background: #e38484;
     width: 400px;
@@ -87,4 +105,20 @@
     background: #d0e384;
     width: 400px;
     height: 300px;
+}
+
+.end-footer {
+}
+
+.end-footer::before {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 100%;
+    top: 4rem;
+    overflow: hidden;
+    background: linear-gradient(to right, #d25778, #ec585c, #e7d155, #56a8c6);
+
+    z-index: 10;
+    filter: blur(30px);
 }
