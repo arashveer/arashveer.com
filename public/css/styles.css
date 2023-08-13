@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap");
+
 :root {
     --rainbow: linear-gradient(to right, #d25778, #ec585c, #e7d155, #56a8c6);
+    --color: #6473ff;
 }
 
 body {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    color: #14252e;
 }
 
 ::selection {
@@ -17,6 +21,7 @@ body {
 .logo-letter {
     font-family: "Pacifico", serif;
     font-size: 44px;
+    color: #14252e;
 }
 
 .fancy-border {
@@ -37,8 +42,27 @@ body {
     -moz-text-fill-color: transparent;
 }
 
+.contact-me {
+    box-shadow: 0.5px 1px 0 0 var(--color), 1.5px 2px 0 0 var(--color),
+        2.5px 3px 0 0 var(--color), 3.5px 4px 0 0 var(--color),
+        4.5px 5px 0 0 var(--color), 5.5px 6px 0 0 var(--color);
+    border: 2px solid var(--color);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.contact-me:hover {
+    background-color: #d7dbff;
+}
+
+.contact-me:hover {
+    transition: box-shadow 0.15s, top 0.1s, left 0.1s, transform 0.1s,
+        outline-color 0.1s;
+    box-shadow: none;
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+}
+
 .project-title {
-    font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
 }

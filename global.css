@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .container {
-    @apply xl:w-[70%];
+    @apply xl:max-w-[1160px];
 }
