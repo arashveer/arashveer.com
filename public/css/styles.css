@@ -1,6 +1,6 @@
 :root {
     --rainbow: linear-gradient(to right, #d25778, #ec585c, #e7d155, #56a8c6);
-    --color: #6473ff;
+    --color: #5663d8;
 }
 
 body {
@@ -14,6 +14,19 @@ body {
     background: #7ef7e0;
     -webkit-text-fill-color: #000;
     -moz-text-fill-color: #000;
+}
+
+.link-underline {
+    text-decoration: underline;
+    text-underline-offset: 2.4px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: #999999;
+}
+
+.link-underline:hover {
+    transition: all 250ms ease;
+    text-decoration-color: var(--color);
+    text-underline-offset: 5px;
 }
 
 .logo-letter {
@@ -47,21 +60,19 @@ body {
     border: 2px solid var(--color);
     padding: 0.5rem 1rem;
     border-radius: 3px;
+    font-size: 16px;
 }
 
 .contact-me:hover {
     background-color: #d7dbff;
-}
-
-.contact-me:hover {
     transition: box-shadow 0.15s, top 0.1s, left 0.1s, transform 0.1s,
         outline-color 0.1s;
     box-shadow: none;
-    transform: rotateX(0) rotateY(0) rotateZ(0);
+    /* transform: rotateX(90) rotateY(90) rotateZ(90); */
 }
 
 .project-title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
