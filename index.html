@@ -28,11 +28,11 @@
                 class="flex container mx-auto justify-end flex-row py-1.5 items-center"
             >
                 <div class="flex-1 logo-letter">
-                    <span class="cursor-pointer pr-2 select-none">A</span>
+                    <a class="cursor-pointer pr-2 select-none" href="https://arashveer.com">A</a>
                 </div>
-                <div class="px-5 cursor-pointer">Home</div>
-                <div class="px-5 cursor-pointer">Projects</div>
-                <div class="px-5 cursor-pointer">Contact</div>
+                <div class="pr-10 cursor-pointer"><a href="https://github.com/arashveer">GitHub</a></div>
+                <div class="pr-10 cursor-pointer"><a href="#projects">Projects</a></div>
+                <div class="cursor-pointer"><a href="mailto:arashgaraya@outlook.com">Contact</a></div>
             </div>
         </nav>
         <!-- nav bar ends -->
@@ -55,6 +55,7 @@
                     <p class="text-zinc-600">Interested?</p>
                     <button
                         class="contact-me text-base my-2 select-none"
+                        onclick="window.open('mailto:arashgaraya@outlook.com', '_blank');" 
                     >
                         Contact me
                     </button>
@@ -63,13 +64,14 @@
             <!-- hero section ends -->
 
             <!-- projects section starts -->
+            <div id="projects"></div>
             <p class="text-5xl font-extralight pb-6 z-40 text-center tracking-tighter relative">Projects</p>
             <div class="projects">
                 <div>
                     <i></i>
                     <div class="relative p-3">
                             <div class="project-title pb-4">Codebits</div>
-                            <p>
+                            <p class="leading-8">
                                 Codebits is a tool that enables you to effortlessly write and share code with others using a simple link. I had this idea while collaborating on group projects during my classes, where we often resorted to screen sharing or sending code snippets before finalizing commits on Git. My aim was to create a solution that would streamline the code-sharing process. Through the development of this website, I gained hands-on experience in building a full-stack platform. This encompassed configuring a database and deploying a server, while also refining my front-end skills. 
                             </p>
                             </br>
@@ -85,8 +87,8 @@
                             <div class="project-title pb-4">
                                 Expense Tracker
                             </div>
-                            <p>
-                                This project was undertaken as part of one of my courses, where the task was to develop a Java-based application. I chose to create an expense tracker due to its potential usefulness in my personal life. The implementation of this project utilized Java along with key libraries such as Java Swing for the user interface and JUnit for testing. Through this project, I gained valuable insights into essential software development paradigms like Object-Oriented Programming, the application of various design patterns, and the significance of ensuring data persistence using JSON. 
+                            <p class="leading-8">
+                                As part of one of my courses, I developed an expense tracker due to its potential usefulness in my personal life. The implementation of this project utilized Java along with key libraries such as Java Swing for the user interface and JUnit for testing. Through this project, I gained valuable insights into essential software development paradigms like Object-Oriented Programming, the application of various design patterns, and the significance of ensuring data persistence using JSON. 
                             </p>
                             </br>
                             <p>
