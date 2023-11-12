@@ -6,6 +6,7 @@
 body {
     font-family: "Inter", sans-serif;
     font-size: 18px;
+    width: 100%;
     color: #14252e;
 }
 
@@ -69,11 +70,6 @@ body {
         outline-color 0.1s;
     box-shadow: none;
     /* transform: rotateX(90) rotateY(90) rotateZ(90); */
-}
-
-.project-title {
-    font-size: 1.6rem;
-    font-weight: 600;
 }
 
 .projects {

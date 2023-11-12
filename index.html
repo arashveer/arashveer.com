@@ -22,37 +22,33 @@
     <body>
         <!-- nav bar starts -->
         <nav
-            class="z-50 fixed w-full bg-white drop-shadow-md border-b fancy-border hover:drop-shadow-xl delay-150 transition-all duration-500"
+            class="z-50 sticky top-0 w-full bg-white drop-shadow-md border-b fancy-border hover:drop-shadow-xl delay-150 transition-all duration-500"
         >
             <div
-                class="flex container mx-auto justify-end flex-row py-1.5 items-center"
+                class="flex lg:gap-12 gap-6 container mx-auto justify-end flex-row py-1.5 items-center"
             >
                 <div class="flex-1 logo-letter">
-                    <a class="cursor-pointer pr-2 select-none" href="https://arashveer.com">A</a>
+                    <a class="select-none" href="https://arashveer.com">A</a>
                 </div>
-                <div class="pr-10 cursor-pointer"><a href="https://github.com/arashveer">GitHub</a></div>
-                <div class="pr-10 cursor-pointer"><a href="#projects">Projects</a></div>
-                <div class="cursor-pointer"><a href="mailto:arashgaraya@outlook.com">Contact</a></div>
+                <div><a class="hover:underline hover:underline-offset-4" href="https://github.com/arashveer">GitHub</a></div>
+                <div><a class="hover:underline hover:underline-offset-4" href="#projects">Projects</a></div>
+                <div><a class="hover:underline hover:underline-offset-4" href="mailto:arashgaraya@outlook.com">Contact</a></div>
             </div>
         </nav>
         <!-- nav bar ends -->
+        <section class="overflow-x-hidden">
         <main class="container mx-auto">
             <!-- hero section starts -->
-            <div class="py-20">
-                <div class="py-12">
-                <p
-                    class="boldname font-bold text-6xl leading-tight"
+            <div class="lg:py-20 py-4">
+                <div class="lg:py-12 py-6">
+                <h1
+                    class="boldname text-center font-bold lg:text-6xl text-4xl lg:leading-[4.5rem]"
                 >
-                    Hello! I'm Arashveer. </br> I am a student and </br>an aspiring
-                    software </br>developer.
-                </p>
+                    Hello! I'm Arashveer. I am a student and an aspiring
+                    software developer.
+                </h1>
                 </div>
-                <p class="w-2/3 leading-8">
-                    I am Arashveer Garaya, currently studying Computer Science at University of British Columbia. I enjoy working on new ideas while actively incorporating new concepts to develop better solutions for problems. I take pleasure in working as a part of a team, and my teammates would describe me as driven, enthusiastic, and someone to goes out of their way to understand a problem thoroughly and find a relevant solution. Currently, I am seeking opportunities where I can put my skills to develop valuable technologies that will benefit companies and their end-users. 
-                </p>
-                <div class="py-4"></div>
-                <div class="flex items-center gap-2">
-                    <p class="text-zinc-600">Interested?</p>
+                <div class="flex justify-center items-center gap-2">
                     <button
                         class="contact-me text-base my-2 select-none"
                         onclick="window.open('mailto:arashgaraya@outlook.com', '_blank');" 
@@ -60,17 +56,23 @@
                         Contact me
                     </button>
                 </div>
+                <div class="py-4"></div>
+                <div>
+                <p class="mx-auto max-w-[60ch] leading-8">
+                    I am Arashveer Garaya, currently studying Computer Science at University of British Columbia. I enjoy working on new ideas while actively incorporating new concepts to develop better solutions for problems. I take pleasure in working as a part of a team, and my teammates would describe me as driven, enthusiastic, and someone to goes out of their way to understand a problem thoroughly and find a relevant solution. Currently, I am seeking opportunities where I can put my skills to develop valuable technologies that will benefit companies and their end-users. 
+                </p>
+                </div>
             </div>
             <!-- hero section ends -->
 
             <!-- projects section starts -->
             <div id="projects"></div>
-            <p class="text-5xl font-extralight pb-6 z-40 text-center tracking-tighter relative">Projects</p>
+            <h2 class="text-5xl font-extralight my-12 z-40 text-center tracking-tighter relative">Projects</h2>
             <div class="projects">
                 <div>
                     <i></i>
                     <div class="relative p-3">
-                            <div class="project-title pb-4">Codebits</div>
+                            <div class="text-2xl font-[600] pb-4">Codebits</div>
                             <p class="leading-8">
                                 Codebits is a tool that enables you to effortlessly write and share code with others using a simple link. I had this idea while collaborating on group projects during my classes, where we often resorted to screen sharing or sending code snippets before finalizing commits on Git. My aim was to create a solution that would streamline the code-sharing process. Through the development of this website, I gained hands-on experience in building a full-stack platform. This encompassed configuring a database and deploying a server, while also refining my front-end skills. 
                             </p>
@@ -84,7 +86,7 @@
                 <div>
                     <i></i>
                     <div class="relative p-3">
-                            <div class="project-title pb-4">
+                            <div class="text-2xl font-[600] pb-4">
                                 Expense Tracker
                             </div>
                             <p class="leading-8">
@@ -98,9 +100,9 @@
                     </div>
                 </div>
             </div>
-            <div class="py-20"></div>
+            <div class="lg:py-20 py-8"></div>
             <!-- projects section ends -->
-        </main>
+        </main></section>
         <div class="relative">
             <div class="py-8 end-footer">
                 <p class="text-center">Arashveer Garaya 2023</p>
