@@ -4,8 +4,10 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
     width: 100%;
     color: #14252e;
 }
@@ -42,6 +44,7 @@ body {
 }
 
 .boldname {
+    font-family: "Inter", serif;
     letter-spacing: -0.025em;
     background-color: #000;
     background: linear-gradient(180deg, #444, #000);
@@ -55,6 +58,8 @@ body {
 }
 
 .contact-me {
+    font-family: "Inter", serif;
+    font-weight: 500;
     box-shadow: 0.5px 1px 0 0 var(--color), 1.5px 2px 0 0 var(--color),
         2.5px 3px 0 0 var(--color), 3.5px 4px 0 0 var(--color),
         4.5px 5px 0 0 var(--color), 5.5px 6px 0 0 var(--color);
@@ -70,6 +75,10 @@ body {
         outline-color 0.1s;
     box-shadow: none;
     /* transform: rotateX(90) rotateY(90) rotateZ(90); */
+}
+
+.contact-me:active {
+    background-color: #c3c9ff;
 }
 
 .projects {
@@ -122,6 +131,19 @@ body {
 
 .projects > div > div {
     z-index: 40;
+}
+
+.projects-title {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 2rem /* 32px */;
+}
+
+.test-atkinson {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
 }
 
 .placeholder-img {

@@ -1902,8 +1902,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-left {
@@ -1992,6 +2005,10 @@ video {
 
 .font-extralight {
   font-weight: 200;
+}
+
+.font-\[700\] {
+  font-weight: 700;
 }
 
 .uppercase {
